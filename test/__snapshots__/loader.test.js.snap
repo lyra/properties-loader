@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Load a properties file and outputs a JSON module Basic example 1`] = `"export default {\\"name\\":\\"alex\\"}"`;
+
+exports[`Load a properties file and outputs a JSON module Example with namespaces 1`] = `"export default {\\"user\\":{\\"name\\":\\"alex\\"}}"`;
+
+exports[`Load a properties file and outputs a JSON module Example with namespaces and sections 1`] = `"export default {\\"user\\":{\\"name\\":\\"alex\\"},\\"address\\":{\\"number\\":42,\\"street\\":\\"foobar\\"}}"`;

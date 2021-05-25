@@ -1,0 +1,63 @@
+{
+  "name": "@lyracom/properties-loader",
+  "description": "Webpack loader for .properties files",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "webpack",
+    "loader",
+    "properties"
+  ],
+  "author": "Lyra (https://www.lyra.com)",
+  "contributors": [
+    {
+      "name": "Alex Fournier",
+      "email": "alex.fournier.fr@gmail.com"
+    }
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyra/properties-loader.git"
+  },
+  "homepage": "https://github.com/lyra/properties-loader",
+  "bugs": {
+    "url": "https://github.com/lyra/properties-loader/issues"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "test": "jest",
+    "format": "prettier -w -u package.json index.js test"
+  },
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "properties": "^1.2.1",
+    "schema-utils": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@lyracom/prettier-config": "^3.0.0",
+    "babel-jest": "^27.0.1",
+    "husky": "^6.0.0",
+    "jest": "^27.0.1",
+    "lint-staged": "^11.0.0",
+    "memfs": "^3.2.2",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "prettier": "@lyracom/prettier-config",
+  "lint-staged": {
+    "*": "prettier -w -u"
+  }
+}

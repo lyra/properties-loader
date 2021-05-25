@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "path": {
+      "description": "By default parse() reads a String. If you want to read a file, set this option to true. If this option is used, the callback is mandatory. It gets 2 parameters, a possible error and the object with all the properties.",
+      "type": "boolean"
+    },
+    "comments": {
+      "description": "Allows you to add additional comment tokens. The token must be a single printable non-whitespae ascii character. If the strict option is not set, the tokens # and ! are parsed as comment tokens.",
+      "anyOf": [{ "type": "string" }, { "type": "array" }]
+    },
+    "separators": {
+      "description": "Allows you to add additional separator tokens. The token must be a single printable non-whitespae ascii character. If the strict option is not set, the tokens = and : are parsed as comment tokens.",
+      "anyOf": [{ "type": "string" }, { "type": "array" }]
+    },
+    "strict": {
+      "description": "This option can be used with the comments and separators options. If true, only the tokens specified in these options are used to parse comments and separators.",
+      "type": "boolean"
+    },
+    "sections": {
+      "description": "Parses INI sections. Read the INI section for further details.",
+      "type": "boolean"
+    },
+    "namespaces": {
+      "description": "Parses dot separated keys as JavaScript objects. Look at the namespaces section for further details.",
+      "type": "boolean"
+    },
+    "variables": {
+      "description": "Allows you to read the value of a key while the file is being parsed. Look at the variables section for further details.",
+      "type": "boolean"
+    },
+    "vars": {
+      "description": "External variables can be passed to the file if the variables option is enabled. Look at the variables section for further details.",
+      "type": "boolean"
+    },
+    "include": {
+      "description": "Files can be linked and imported with the include key. If this option is used, the callback is mandatory. Look at the include section for further details.",
+      "type": "boolean"
+    },
+    "reviver": {
+      "description": "Each property or section can be removed or modified from the final object. It's similar to the reviver of the JSON.parse() function. See https://github.com/gagle/node-properties for more info.",
+      "instanceof": "Function"
+    }
+  },
+  "additionalProperties": false
+}
