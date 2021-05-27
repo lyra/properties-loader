@@ -1,7 +1,7 @@
 {
   "name": "@lyracom/properties-loader",
   "description": "Webpack loader for .properties files",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "keywords": [
     "webpack",
@@ -20,11 +20,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lyra/properties-loader.git"
+    "url": "git+https://github.com/lyra/webpack-properties-loader.git"
   },
-  "homepage": "https://github.com/lyra/properties-loader",
+  "homepage": "https://github.com/lyra/webpack-properties-loader",
   "bugs": {
-    "url": "https://github.com/lyra/properties-loader/issues"
+    "url": "https://github.com/lyra/webpack-properties-loader/issues"
   },
   "main": "index.js",
   "files": [
